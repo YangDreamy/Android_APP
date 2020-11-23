@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondPage">
+    <TextView
+        android:id="@+id/gameinfo"
+        android:layout_width="197dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:text="Game Info"
+        android:textColor="#03A9F4"
+        android:textSize="32dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/detailbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="do you want to know more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="68dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:text="Name: "
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageViewdetalis"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/gameinfo" />
+
+    <TextView
+        android:id="@+id/namecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/nametext"
+        app:layout_constraintTop_toTopOf="@+id/nametext" />
+
+    <TextView
+        android:id="@+id/typeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Type: "
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/nametext" />
+
+    <TextView
+        android:id="@+id/nbplayertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="NB_players: "
+        android:textSize="20dp"
+        android:textColor="#0B0A0A"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/typeview" />
+
+    <TextView
+        android:id="@+id/yeartext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#0B0A0A"
+        android:text="Year: "
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/nbplayertext" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="479dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="196dp" />
+
+    <ImageView
+        android:id="@+id/imageViewdetalis"
+        android:layout_width="154dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameinfo" />
+
+    <TextView
+        android:id="@+id/typecontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/typeview"
+        app:layout_constraintTop_toTopOf="@+id/typeview" />
+
+    <TextView
+        android:id="@+id/nbcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/nbplayertext"
+        app:layout_constraintTop_toTopOf="@+id/nbplayertext" />
+
+    <TextView
+        android:id="@+id/yearcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/yeartext"
+        app:layout_constraintTop_toTopOf="@+id/yeartext" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/detailbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yeartext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
